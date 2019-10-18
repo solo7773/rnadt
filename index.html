@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Nan Zhou">
+    <meta name='description' content='The RNAdt is ...'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>RNAdt</title>
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="scripts/jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="scripts/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <link rel="stylesheet" href="scripts/aos-dist/aos.css">
+    <script src="scripts/aos-dist/aos.js"></script>
+    <link rel="stylesheet" href="styles/fornac.css">
+		<script src='scripts/d3_v420.js'></script>
+  	<script src='scripts/fornac.js'></script>
+  </head>
+  <body>
+    <nav>
+    	<span id="logoChar">RNAdt</span>
+      <ul>
+      	<li class="nav-item"><a href="index.html">Home</a></li>
+      	<li class="nav-item"><a href="operations/download.html">Download</a></li>
+      	<li class="nav-item"><a href="operations/help.html">Help</a></li>
+      </ul>
+    </nav>
+    <div class="homeFace">
+      <header>
+      	<div id='rna_ss'></div>
+        <h1>An online tutorial and data portal for the RNA structurome era</h1>
+      </header>
+    </div>
+    <div id='pageScrollCtrl'>
+      <button type="button" id='pageup'>&#9651;</button><br />
+    	<button type="button" id='pagedown'>&#9661;</button>
+    </div>
+    <div id="dialog" title="More">
+  		<p>This is an animated dialog which is useful for displaying.</p>
+		</div>
+    <main>
+      <section data-aos="fade-up">
+        <h3>Timeline of HTS-associated RNA structure probing methods</h3>
+        <article id="timeLine">
+        	<!-- get text using ajax to make timeline -->
+        </article>
+      </section>
+      <section data-aos="flip-right">
+        <h3>Probe class</h3>
+        <article id='pieChart'></article>
+      </section>
+      <section data-aos="zoom-in">
+        <h3>Application environment</h3>
+        <article id='applicationPieChart'></article>
+      </section>
+      <!--section>
+        <h3>Head of section 4</h3>
+        Section
+      </section>
+      <section>
+        <h3>Head of section 5</h3>
+        Section
+      </section-->
+    </main>
+    <footer>
+      <p>&copy;Copyright <span id="footerYear">0000</span> by Nan Zhou. All rights reserved.</p>
+    </footer>
+    <script src="scripts/homepage.js"></script>
+    <script>AOS.init({"delay": 200,"duration": 1000});</script>
+  </body>
+</html>

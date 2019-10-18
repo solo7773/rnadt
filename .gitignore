@@ -1,0 +1,4 @@
+# Ignore some data
+/data/
+/images/
+.DS_Store

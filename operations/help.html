@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Nan Zhou">
+    <meta name='description' content='The RNAdt is ...'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="../styles/style.css" rel="stylesheet">
+    <title>RNAdt</title>
+    <script src="../scripts/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <nav>
+    	<span id="logoChar">RNAdt</span>
+      <ul>
+      	<li class="nav-item"><a href="../index.html">Home</a></li>
+      	<li class="nav-item"><a href="download.html">Download</a></li>
+      	<li class="nav-item"><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h3 class="mdt-h3">User guidance</h3>
+        <article>
+        	<div  class="mdt-title_box">
+        		<div class="mdt-title">About</div>
+        		<div class="mdt-content">
+        			<p>RNAdt is a web-based tutorial and data portal for HTS-associated RNA structure probing methods. 
+        			Users can use RNAdt to learn to implement RNA structure probing experiments with easy 
+        			because the workflow of each method from its original publication is provided. For 
+        			users who are interested in learning to analyze RNA structurome data, RNAdt can be 
+        			used as a data portal to reach existing HTS data sets.<br /><br />
+        			Of note, we may not include the complete list of RNA structure probing methods due to 
+        			imperfect search and filtering strategies. We apologize to authors whose state-of-the-art 
+        			methods are not included in this version of RNAdt. RNAdt promises to provide free and 
+        			long-term service. In the future, RNAdt will be continuously updated and more RNA 
+        			structure probing methods will be added in. RNAdt is expected to be a valuable resource 
+        			to get profound insights into the RNA biology.</p>
+        		</div>
+        	</div>
+        	<div  class="mdt-title_box">
+        		<div class="mdt-title">Abbreviations</div>
+        		<div class="mdt-content">
+        			<p>HTS: High-throughput sequencing.</p>
+        			<p>_NA_: Not Available owing to no data from the original source, or Not Applicable.</p>
+        			<p>RT: Reverse Transcription.</p>
+        		</div>
+        	</div>
+        	<div  class="mdt-title_box">
+        		<div class="mdt-title">Definition of fields shown in the method detail page</div>
+        		<div class="mdt-content">
+        			<table>
+        				<tr><th>Filed</th><th>Definition</th></tr>
+        				<tr><td>Method</td><td>The name of the RNA structure probing method.</td></tr>
+        				<tr><td>Year</td><td>The year when this method was published.</td></tr>
+        				<tr><td>Name</td><td>The full name of this method.</td></tr>
+        				<tr><td>Publication</td><td>The title of the article in which this method was published.</td></tr>
+        				<tr><td>Published by</td><td>The authors of the article in which this method was published.</td></tr>
+        				<tr><td>Publication abstract</td><td>The abstract of the article in which this method was published.</td></tr>
+        				<tr><td>Publication data</td><td>The HTS data alongside the article in which this method was published.</td></tr>
+        				<tr><td>Publication doi</td><td>The DOI of the article in which this method was published.</td></tr>
+        				<tr><td>Probe</td><td>The probe(s) this method uses.</td></tr>
+        				<tr><td>Probe class</td><td>What class the probe(s) belongs to.</td></tr>
+        				<tr><td>Probe target</td><td>Which nucleobase or moiety the probe targets.</td></tr>
+        				<tr><td>Target region</td><td>Which part of the RNA strand the probe targets.</td></tr>
+        				<tr><td>Readout</td><td>The method used to read structural signal (e.g. reactivity).</td></tr>
+        				<tr><td>Scale </td><td>The scale at which this method assesses RNA structure.</td></tr>
+        				<tr><td>Structure inferred</td><td>The type of the probed high-level RNA structure.</td></tr>
+        				<tr><td>Validated by</td><td>The RNA used to validate this method.</td></tr>
+        				<tr><td>Validated in</td><td>The organism or biological system used to validate this method.</td></tr>
+        				<tr><td>Workflow</td><td>The schematic workflow of this method from its original publication.</td></tr>
+        				<tr><td>Figure reuse license</td><td>The license of permission granted to RNAdt to use the original figure from its copyright holder.</td></tr>
+        			</table>
+        		</div>
+        	</div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;Copyright <span id="footerYear">0000</span> by Nan Zhou. All rights reserved.</p>
+    </footer>
+  </body>
+  <script>
+  	let d = new Date();
+  	document.getElementById('footerYear').textContent = d.getFullYear();
+  </script>
+</html>
