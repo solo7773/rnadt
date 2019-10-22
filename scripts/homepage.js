@@ -95,8 +95,8 @@ function makeTimeLine(datain) {
 				$("#dialog").html("<ul><li>Method: <a target='_blank' href='operations/showMethodDetails.html?methodName=" + val.Method + "'>" + val.Method + "</a></li><li>Year: " + val.Year + "</li><li>Name: " +
 					 val.Name + "</li><li>Probe: " + val.Probe + "</li><li>Probe class: " + val['Probe class'] + "</li><li>Probe target: " +
 					 val['Probe target'] + "</li><li>Target region: " + val['Target region'] + "</li><li>Readout: " +
-					 val.Readout + "</li><li>Experimental setting: " + val['Experimental setting'] + "</li><li>Original application data: " +
-					 val['Ori. App. Data'] +
+					 val.Readout + "</li><li>Experimental setting: " + val['Experimental setting'] + "</li><li>Publication: " +
+					 val.Publication + "</li><li>Accompanying data: " + val['Publication data'] +
 					 "</li></ul>");
 				$( "#dialog" ).dialog( "open" );
 				return false;
